@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#a71930">
+    <meta name="description" content="Blood bank donor, inventory, request, and issue management demo.">
+    <title>Blood Bank Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#dashboard" aria-label="Blood Bank home">
+            <span class="brand-mark" aria-hidden="true">+</span>
+            <span>Blood Bank <small>Management System</small></span>
+        </a>
+        <p class="demo-notice">GitHub Pages demo · Changes are saved only in this browser</p>
+    </header>
+
+    <nav class="main-nav" aria-label="Main navigation">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#donors">Donors</a>
+        <a href="#inventory">Inventory</a>
+        <a href="#requests">Requests</a>
+        <a href="#issues">Issue blood</a>
+        <a href="#issue-history">Issue history</a>
+    </nav>
+
+    <main id="app" class="container" aria-live="polite">
+        <p class="loading">Loading Blood Bank Management…</p>
+    </main>
+
+    <footer class="site-footer">
+        <span>Blood Bank Management System</span>
+        <button class="text-button" type="button" data-action="reset-demo">Reset demo data</button>
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
